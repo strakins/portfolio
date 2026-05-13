@@ -8,7 +8,7 @@ import { Button } from "../components/ui/Button";
 export default function Home() {
   return (
     <PageTransition>
-      <div className="flex flex-col items-center justify-center min-h-[60vh] text-center max-w-4xl mx-auto pt-12 md:pt-20">
+      <div className="flex flex-col items-center justify-center min-h-[60vh] text-center max-w-4xl mx-auto pt-4 md:pt-6">
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -20,7 +20,7 @@ export default function Home() {
         </motion.div>
 
         <motion.h1 
-          className="text-5xl md:text-7xl lg:text-8xl font-display font-bold tracking-tighter leading-[1.1] mb-6"
+          className="text-2xl md:text-5xl lg:text-6xl font-display font-bold tracking-tighter leading-[1.1] mb-6"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2 }}
@@ -31,7 +31,7 @@ export default function Home() {
         </motion.h1>
 
         <motion.p 
-          className="text-lg md:text-xl text-slate-400 mb-10 max-w-2xl leading-relaxed"
+          className="text-md md:text-lg text-slate-400 mb-10 max-w-2xl leading-relaxed"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.3 }}

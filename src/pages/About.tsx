@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import PageTransition from "../components/PageTransition";
 import { Button } from "../components/ui/Button";
 import { Download } from "lucide-react";
+import My_Pics from '../../public/images/hero.png';
 
 export default function About() {
   return (
@@ -18,8 +19,8 @@ export default function About() {
             className="space-y-12"
           >
             <div>
-              <h1 className="text-5xl md:text-7xl font-display font-bold tracking-tight mb-8">About <span className="text-gradient-accent">Me.</span></h1>
-              <div className="space-y-6 text-lg md:text-xl text-slate-300 leading-relaxed font-light">
+              <h1 className="text-4xl md:text-5xl font-display font-bold tracking-tight mb-8">About <span className="text-gradient-accent">Me.</span></h1>
+              <div className="space-y-6 text-base md:text-lg text-slate-300 leading-relaxed font-light">
                 <p>
                   I'm Blessing, a Full-Stack Product Engineer with a passion for building software that feels native, interactive, and premium.
                 </p>
@@ -48,7 +49,7 @@ export default function About() {
             
             <div className="flex gap-4">
               <Button href="/contact">Get in Touch</Button>
-              <Button variant="outline" href="/experience">
+              <Button variant="outline" href="https://drive.google.com/file/d/17cmYGNRcCefWX2cLVEC2_4urzshgKlZZ/view?usp=sharing">
                 <Download size={16} /> Resume
               </Button>
             </div>
@@ -62,9 +63,9 @@ export default function About() {
             className="lg:sticky lg:top-32"
           >
             <div className="relative aspect-[3/4] rounded-[2rem] overflow-hidden border border-white/10 bg-[#111827] shadow-2xl">
-              <div className="absolute inset-0 bg-gradient-to-tr from-blue-900/40 to-transparent z-10" />
+              <div className="absolute inset-0 bg-gradie-to-tr from-blue-900/40 to-transparent z-10" />
               <img 
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80" 
+                src={My_Pics} 
                 alt="Portrait" 
                 className="w-full h-full object-cover grayscale mix-blend-luminosity hover:grayscale-0 transition-all duration-700" 
               />
